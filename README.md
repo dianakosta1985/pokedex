@@ -26,8 +26,8 @@ Make sure you have the following installed:
 
 To run this project in Docker, follow these steps:
 
-Build image: `docker build -t pokedex .`
-Run image: `docker run -p 5173:5137 --name pokedex-container pokedex`
+- Build image: `docker build -t pokedex .`
+- Run image: `docker run -p 5173:5137 --name pokedex-container pokedex`
 
 The application will now be available at http://localhost:5137
 
