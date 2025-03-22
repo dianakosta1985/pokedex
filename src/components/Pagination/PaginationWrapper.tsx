@@ -19,7 +19,9 @@ export default function PaginationWrapper<T>({
   const [paginatedItems, setPaginatedItems] = useState<T[]>([]);
 
   useEffect(() => {
-    if (items.length > 0) {
+    if (search !== "" && currentPage !== 1) {
+      setCurrentPage(1);
+    } else if (items.length > 0) {
       const startIndex = (currentPage - 1) * NUM_PER_PAGE;
       const endIndex = startIndex + NUM_PER_PAGE;
       const shownItems =
@@ -28,7 +30,7 @@ export default function PaginationWrapper<T>({
           : filteredItems;
       setPaginatedItems(shownItems.slice(startIndex, endIndex));
     }
-  }, [currentPage, items, search]);
+  }, [currentPage, items, search, filteredItems]);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);

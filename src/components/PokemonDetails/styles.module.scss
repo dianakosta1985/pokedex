@@ -15,7 +15,7 @@
   display: flex;
   overflow: hidden;
   background: #fff;
-  gap: 30px;
+  gap: 35px;
 }
 
 .image {
@@ -25,7 +25,7 @@
 }
 
 .details {
-  padding: 20px;
+  padding: 0 20px;
   flex: 1;
 }
 
@@ -72,8 +72,13 @@
   border-radius: 5px;
 }
 
-.statsColumn {
-  flex: 1;
+.table {
+  padding: 0 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .statsColumn p {

@@ -30,7 +30,7 @@ export default function PokemonDetails(pokemon: PokemonDetailsType) {
           </div>
           <div className={styles.line}></div>
           <div className={styles.statsContainer}>
-            <div className={styles.statsColumn}>
+            <div className={styles.table}>
               <p>
                 <strong>HP:</strong> {stats[0].base_stat}
               </p>
@@ -47,7 +47,7 @@ export default function PokemonDetails(pokemon: PokemonDetailsType) {
                 <strong>Speed:</strong> {stats[5].base_stat}
               </p>
             </div>
-            <div className={styles.statsColumn}>
+            <div className={styles.table}>
               <p>
                 <strong>Attack:</strong> {stats[1].base_stat}
               </p>

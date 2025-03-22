@@ -65,3 +65,4 @@ I incorporated Google Material Icons into the app to provide a rich set of custo
 
 - implement favorites with local Storage
 - Implement server-side search functionality for better data management and than I could implement pagination with server side API
+- Unit tests

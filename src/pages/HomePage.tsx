@@ -10,6 +10,7 @@ import PaginationWrapper from "../components/Pagination/PaginationWrapper";
 export default function HomePage() {
   const { pokemon, loading, error, fetchPokemon } = usePokemonStore();
   const { search, setSearch, filteredItems } = useSearch(pokemon, "name");
+  console.log("filteredItems", filteredItems[0]);
 
   useEffect(() => {
     fetchPokemon();

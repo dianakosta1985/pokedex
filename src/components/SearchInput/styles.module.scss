@@ -4,6 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  min-width: 860px;
   box-sizing: border-box;
   padding: 0 20px;
 
@@ -18,5 +19,11 @@
     position: absolute;
     top: 13px;
     padding-left: 8px;
+  }
+}
+/* Media Queries for Phones */
+@media (max-width: 1200px) {
+  .inputWrapper {
+    min-width: 370px;
   }
 }
