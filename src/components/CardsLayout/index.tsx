@@ -18,7 +18,7 @@ const CardsLayout = ({ pokemonLst }: { pokemonLst: Pokemon[] }) => {
   }, [pokemonLst]);
 
   if (pokemonLst.length === 0)
-    return <h4 style={{ height: "500px" }}>There are no records</h4>;
+    return <div className={styles.noRecords}>There are no records</div>;
 
   return (
     <div className={styles.pokemonList}>

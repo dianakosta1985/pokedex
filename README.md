@@ -55,7 +55,7 @@ Due to the large dataset (1300 Pokémon records), pagination is implemented clie
 
 #### Pick Color from PDF:
 
-    I relied on a helpful resource to enable color extraction from PDFs for UI customization.
+I relied on a helpful resource to enable color extraction from PDFs for UI customization.
 
 #### Google Material Icons:
 

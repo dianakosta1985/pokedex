@@ -52,8 +52,22 @@
   cursor: pointer;
 }
 
+.noRecords {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 860px;
+  height: 100px;
+}
+
 /* Media Queries for Phones */
 @media (max-width: 768px) {
+  .noRecords {
+    min-width: 400px;
+  }
+
   .pokemonList {
     max-width: 100%;
     gap: 5px;
