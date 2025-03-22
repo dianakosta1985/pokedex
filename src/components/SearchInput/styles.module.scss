@@ -1,0 +1,42 @@
+.inputWrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 900px;
+  transform: translateX(50px);
+  box-sizing: border-box;
+  .inputField {
+    width: 100%;
+    max-width: 766px;
+    padding-left: 30px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .searchIcon {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+  }
+}
+/* Media Queries for Tablets */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .inputWrapper {
+    max-width: 580px;
+    transform: translateX(-15px);
+    .inputField {
+      max-width: 770px;
+    }
+  }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 768px) {
+  .inputWrapper {
+    max-width: 500px;
+    .inputField {
+      max-width: 320px;
+    }
+  }
+}

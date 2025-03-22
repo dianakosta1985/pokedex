@@ -1,0 +1,26 @@
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.skeletonCard {
+  background-color: #ccc;
+  width: 170px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
