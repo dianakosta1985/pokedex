@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const useSearch = <T>(items: T[], searchKey: keyof T, delay = 300) => {
+const useSearch = <T>(items: T[], searchKey: keyof T, delay = 1000) => {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
 
@@ -19,7 +19,7 @@ const useSearch = <T>(items: T[], searchKey: keyof T, delay = 300) => {
     return items.filter((item) =>
       String(item[searchKey]).toLowerCase().includes(lowercasedSearch)
     );
-  }, [debouncedSearch, items, searchKey]);
+  }, [debouncedSearch, items]);
 
   return { search, setSearch, filteredItems };
 };
