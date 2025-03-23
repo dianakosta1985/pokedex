@@ -59,13 +59,13 @@
   flex-wrap: wrap;
   width: 100%;
   min-width: 860px;
-  height: 100px;
+  height: calc(100vh - 200px);
 }
 
 /* Media Queries for Phones */
 @media (max-width: 768px) {
   .noRecords {
-    min-width: 400px;
+    min-width: 100px;
   }
 
   .pokemonList {
